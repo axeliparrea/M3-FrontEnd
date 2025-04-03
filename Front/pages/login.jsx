@@ -64,7 +64,7 @@ const LoginRegister = () => {
 
   const handleRegister = async () => {
     if (!name || !email || !newPassword) {
-      setError("Por favor complete todos los campos");
+      setError("Por favor complete todos los camposs");
       return;
     }
     setLoading(true);
