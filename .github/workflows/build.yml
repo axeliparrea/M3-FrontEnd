@@ -21,6 +21,9 @@ jobs:
         with:
           node-version: 18
 
+      - name: List directory contents
+        run: ls -la
+
       - name: Install dependencies
         run: npm install
         working-directory: ./front
