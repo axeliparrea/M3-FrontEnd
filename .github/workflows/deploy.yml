@@ -28,14 +28,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./front
+        working-directory: ./Front
 
       - name: Build project
         run: npm run build
-        working-directory: ./front
+        working-directory: ./Front
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: ./front/dist
+          folder: ./Front/dist
