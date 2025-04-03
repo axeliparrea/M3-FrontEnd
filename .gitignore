@@ -19,13 +19,13 @@ Thumbs.db
 
 # Archivos de compilación
 /dist
-/build
-/out
+# /build
+# /out
 
-# Dependencias del frontend
-front/node_modules/
-front/dist/
-front/build/
+# # Dependencias del frontend
+# front/node_modules/
+# front/dist/
+# front/build/
 
 # GitHub workflows cache
 .github/workflows/node_modules/
