@@ -23,9 +23,6 @@ jobs:
         with:
           node-version: '18'
 
-      - name: List directory contents
-        run: ls -la
-
       - name: Install dependencies
         run: npm install
         working-directory: ./Front
@@ -33,6 +30,9 @@ jobs:
       - name: Build project
         run: npm run build
         working-directory: ./Front
+
+      - name: Check build output
+        run: ls -la ./Front/dist
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
