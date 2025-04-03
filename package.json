@@ -5,7 +5,10 @@
   "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "dev": "nodemon backend/server.js"
+    "dev": "nodemon backend/server.js",
+    "build": "echo 'No build step necessary for backend'",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
@@ -21,11 +24,5 @@
   "devDependencies": {
     "nodemon": "^3.0.1"
   },
-
-  "homepage": "https://axeliparrea.github.io/M3-FrontEnd",
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  }
-
+  "homepage": "https://axeliparrea.github.io/M3-FrontEnd"
 }
