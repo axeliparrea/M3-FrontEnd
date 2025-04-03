@@ -17,15 +17,4 @@ package-lock.json
 .DS_Store
 Thumbs.db
 
-# Archivos de compilación
-/dist
-# /build
-# /out
 
-# # Dependencias del frontend
-# front/node_modules/
-# front/dist/
-# front/build/
-
-# GitHub workflows cache
-.github/workflows/node_modules/
