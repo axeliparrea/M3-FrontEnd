@@ -21,7 +21,7 @@ const Dashboard = () => {
   useEffect(() => {
     const isAuthenticated = localStorage.getItem("isAuthenticated");
     const token = localStorage.getItem("token");
-    console.log("Estado de autenticación:", isAuthenticated);
+    console.log("Estado de kautenticación:", isAuthenticated);
     console.log("Token existe:", !!token);
     if (!isAuthenticated) {
       navigate("/login");
